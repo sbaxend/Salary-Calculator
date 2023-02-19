@@ -13,3 +13,5 @@ app.use(express.static('server/public'));
 app.listen(port, () => {
   console.log(`listening on port, ${port}`);
 });
+
+// to test localhost:5001
