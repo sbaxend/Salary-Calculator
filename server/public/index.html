@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<header><strong>Salary Calculator</strong></header>
-<body>
-    <div id ="content">
-    <form class= "employee-data" onsubmit="submitForm(event)">   
-        First Name: <input type="text"><br />
-        Last Name: <input type="text"><br />
-        ID Number: <input type="number"><br />
-        Title: <input type="text"><br />
-        Annual Salary: <input type="number"><br />
-        <input type="submit" value="Calculate"
-    </form>
-
+  </head>
+  <header><strong>Salary Calculator</strong></header>
+  <body>
+    <div id="content">
+      <form class="employee-data" onSubmit="submitForm(event)">
+        First Name: <input type="text" /><br />
+        Last Name: <input type="text" /><br />
+        ID Number: <input type="number" /><br />
+        Title: <input type="text" /><br />
+        Annual Salary: <input type="number" /><br />
+        <input type="submit" value="Calculate" />
+      </form>
+      <table id="money-info">
+        <thhead>
+          <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Id Number</th>
+            <th>Job Title</th>
+            <th>Annual Salary</th>
+            <th>Delete</th>
+          </tr>
+          <tbody id ="employee-money-info">
+            <tr>
+              <th>1</th>
+              <th>Seth Baxendell</th>
+              <th>47788</th>
+              <th>Maintence Machanic II</th>
+              <th>100,000</th>
+              <th><button>Delete</button></th>
+            </tr>
+          </tbody>
+        </thhead>
+      </table>
     </div>
-    
-    
-    
-    
+
     <script src="scripts/client.js"></script>
-</body>
+  </body>
 </html>
