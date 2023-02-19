@@ -1,0 +1,23 @@
+{
+  "name": "salary-calculator",
+  "version": "1.0.0",
+  "description": "[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbaxend/Salary-Calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbaxend/Salary-Calculator/issues"
+  },
+  "homepage": "https://github.com/sbaxend/Salary-Calculator#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
