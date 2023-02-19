@@ -10,11 +10,11 @@
   <body>
     <div id="content">
       <form class="employee-data" onSubmit="submitForm(event)">
-        First Name: <input type="text" /><br />
-        Last Name: <input type="text" /><br />
-        ID Number: <input type="number" /><br />
-        Title: <input type="text" /><br />
-        Annual Salary: <input type="number" /><br />
+        First Name: <input id="first-input" type="text" /><br />
+        Last Name: <input id="last-input" type="text" /><br />
+        ID Number: <input id="ID-input" type="number" /><br />
+        Title: <input id="job-input" type="text" /><br />
+        Annual Salary: <input id="salary-input" type="number" /><br />
         <input type="submit" value="Calculate" />
       </form>
       <table id="money-info">
@@ -27,7 +27,7 @@
             <th>Annual Salary</th>
             <th>Delete</th>
           </tr>
-          <tbody id ="employee-money-info">
+          <tbody id="employee-money-info">
             <tr>
               <th>1</th>
               <th>Seth Baxendell</th>

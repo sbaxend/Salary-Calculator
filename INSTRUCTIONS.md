@@ -1,4 +1,4 @@
-# Weekend Challenge: JavaScript Salary Calculator
+gti# Weekend Challenge: JavaScript Salary Calculator
 Create an application that records employee salaries and adds salaries up to report monthly costs. 
 
 > NOTE: We are expecting a minimum of 8 commits for this assignment.
