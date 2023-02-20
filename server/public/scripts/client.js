@@ -38,9 +38,12 @@ function submitForm(event) {
     monthlyCost()
 }
 function removeRow (event){
-    let employeeData  = document.querySelector('#newly-added').lastChild()
-   console.log (employeeData)
-   //employeeData.remove()
+    let row = event.target.parentNode.parentNode;
+    //parentNode.parentNode is used to get the parent of the parent node. It is commonly used when you want to access a 
+    //higher-level element in the DOM tree, such as a row or a table, when you only have a reference to an element inside 
+    //that higher-level element.
+    // in this case the parent node is <th> then parentNode of that is <tr>
+  row.parentNode.removeChild(row);
 }
 
 function monthlyCost(){
