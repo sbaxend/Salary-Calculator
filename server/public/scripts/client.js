@@ -36,6 +36,7 @@ function submitForm(event) {
     salaries.push(employeeSalaryData);
     console.table(salaries);
     monthlyCost()
+    
 }
 function removeRow (event){
     let row = event.target.parentNode.parentNode;
@@ -51,4 +52,10 @@ function monthlyCost(){
         totalForMonth += salaries[i].Monthly
     }
     console.log("The Total Monthly Cost:", totalForMonth)
+    let thirtyDay = document.querySelector('#cost-for-the-month');
+    thirtyDay.innerHTML = `
+    <h1>Total Monthly Cost:</h1><br />
+    <h2>${totalForMonth}</h2>
+    `
+
 }
