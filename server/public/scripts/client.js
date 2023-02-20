@@ -2,7 +2,7 @@ console.log('Scripted Sourced');
 
 let salary=[];
 let employeeSalaryData = {};
-
+let index = 0;
 function submitForm(event) {
     console.log('submit form');
     event.preventDefault();
@@ -14,4 +14,21 @@ function submitForm(event) {
     console.log(occupation);
     let yearlyAmount = "$" + document.querySelector('#salary-input').value
     console.log(yearlyAmount)
+    let moneyTable = document.querySelector('#employee-money-info')
+    index ++;
+    moneyTable.innerHTML += `
+   <tr id="newly-added">
+    <th>${index}</th>
+    <th>${fullName}</th>
+    <th>${employeeId}</th>
+    <th>${occupation}</th>
+    <th>${yearlyAmount}</th>
+    <th><button onClick="removeRow(event)">Delete</button></th>
+  </tr>
+    
+    `
+}
+function removeRow (event){
+    let employeeData  = document.querySelector('#newly-added')
+    employeeData.remove()
 }
