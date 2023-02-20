@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
   </head>
   <h1><strong>Salary Calculator</strong></h1>
   <body>
     <div id="content">
       <form class="employee-data" onSubmit="submitForm(event)">
-        First Name: <input id="first-input" type="text" /><br />
-        Last Name: <input id="last-input" type="text" /><br />
-        ID Number: <input id="ID-input" type="number" /><br />
-        Title: <input id="job-input" type="text" /><br />
-        Annual Salary: <input id="salary-input" type="number" /><br />
+        First Name: <input id="first-input" type="text" required/><br />
+        Last Name: <input id="last-input" type="text" required/><br />
+        ID Number: <input id="ID-input" type="number" required/><br />
+        Title: <input id="job-input" type="text" required/><br />
+        Annual Salary: <input id="salary-input" type="number" required/><br />
         <input type="submit" value="Calculate" />
       </form>
       <table id="money-info">
@@ -28,14 +29,7 @@
             <th>Delete</th>
           </tr>
           <tbody id="employee-money-info">
-            <tr>
-              <th>1</th>
-              <th>Seth Baxendell</th>
-              <th>47788</th>
-              <th>Maintence Machanic II</th>
-              <th>100,000</th>
-              <th><button onClick="removeRow(event)">Delete</button></th>
-            </tr>
+            
           </tbody>
         </thhead>
       </table>
